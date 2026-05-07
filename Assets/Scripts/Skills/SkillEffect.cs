@@ -13,11 +13,11 @@ public class SkillEffect : ScriptableObject
         switch (effect) 
         {
             case EffectType.AddLife:
-                GameManager.m_Instance.m_Player.GetComponent<Combat>().AddMaxLife(amount);
+                GameManager.Instance.playerController.GetComponent<Combat>().AddMaxLife(amount);
                 break;
 
             case EffectType.AddMana:
-                GameManager.m_Instance.m_Player.GetComponent<Combat>().AddMaxMana(amount, false);
+                GameManager.Instance.playerController.GetComponent<Combat>().AddMaxMana(amount, false);
                 break;
 
             case EffectType.AddArmor:
