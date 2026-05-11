@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d7851cbc3f1d6d409d04812d7ccb434, type: 3}
   m_Name: LifeNode_2
   m_EditorClassIdentifier: Assembly-CSharp::SkillNode
-  unlocked: 0
   maxUses: 1
   cost: 1
-  effect: {fileID: 11400000, guid: cb6b36186cf847348b5c48ef14bd696e, type: 2}
+  effect: {fileID: 11400000, guid: ee579ff256a579444bee4cb9101372d2, type: 2}

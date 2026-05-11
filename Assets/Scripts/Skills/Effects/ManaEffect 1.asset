@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d7851cbc3f1d6d409d04812d7ccb434, type: 3}
-  m_Name: LifeNode_1
-  m_EditorClassIdentifier: Assembly-CSharp::SkillNode
-  maxUses: 1
-  cost: 1
-  effect: {fileID: 11400000, guid: cb6b36186cf847348b5c48ef14bd696e, type: 2}
+  m_Script: {fileID: 11500000, guid: 3951b5f1349be864fbbf2d136dfd7d34, type: 3}
+  m_Name: ManaEffect 1
+  m_EditorClassIdentifier: Assembly-CSharp::SkillEffect
+  effect: 1
+  amount: 7

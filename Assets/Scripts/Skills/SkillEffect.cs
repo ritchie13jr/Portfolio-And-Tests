@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 [CreateAssetMenu(fileName = "SkillEffect", menuName = "Scriptable Objects/SkillEffect")]
 public class SkillEffect : ScriptableObject
@@ -13,15 +14,18 @@ public class SkillEffect : ScriptableObject
         switch (effect) 
         {
             case EffectType.AddLife:
-                GameManager.Instance.playerController.GetComponent<Combat>().AddMaxLife(amount);
+                PlayerResources.Instance.SetMaxLife
+                    (PlayerResources.Instance.lifeResource.GetMaxValue() + amount);
                 break;
 
             case EffectType.AddMana:
-                GameManager.Instance.playerController.GetComponent<Combat>().AddMaxMana(amount, false);
+                PlayerResources.Instance.SetMaxMana
+                    (PlayerResources.Instance.manaResource.GetMaxValue() + amount, true);
+
                 break;
 
             case EffectType.AddArmor:
-                Debug.Log("ArmorAdded");
+                PlayerResources.Instance.AddArmor(amount);
                 break;
         }
     }

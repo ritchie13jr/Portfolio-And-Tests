@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillNode
   maxUses: 1
   cost: 1
-  effect: {fileID: 11400000, guid: ae360c72987e23f41b9ad736713f7d1c, type: 2}
+  effect: {fileID: 11400000, guid: c39d848b79d97d244b72fa09434decbc, type: 2}
